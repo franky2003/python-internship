@@ -1,6 +1,6 @@
 # Python Projects
 
-Here are some basic Python projects that you can work on to practice and enhance your Python programming skills.
+Here are some basic Python projects
 
 ## 1) Calculator
 Create a simple calculator program that can perform basic arithmetic operations like addition, subtraction, multiplication, and division.
