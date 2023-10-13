@@ -15,6 +15,8 @@ def generate_password():
     random.shuffle(pswd_list)
     password = "".join(pswd_list)
     result_label.config(text=f"New Password is {password}")
+    file=open('C:/Users/nkgd2/OneDrive/Desktop/Python Course/Day3/generated_passwords.txt', 'a')
+    file.write(password + '\n')
 
 letters = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
@@ -49,3 +51,6 @@ result_label = tk.Label(text="")
 result_label.grid(row=4, column=0, columnspan=2, pady=(0,10))
 
 window.mainloop()
+
+
+
