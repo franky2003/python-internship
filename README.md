@@ -45,10 +45,13 @@ Create a program that converts miles to kilometers and vice versa.
 Write a program that calculates and prints the square of a given number.
 
 ## 15) Password Generator
-A simple Python program that generates strong and secure passwords.A simple Python program that generates strong and secure passwords.
+A simple Python program that generates strong and secure passwords.A simple Python program that generates strong,secure passwords and stores it.
 
 ## 16) Hello World
 A simple Python program that displays Hello World when clicked 
 
 ## 17)Word Meaning Finder
 A program that fetches a word from dictionary and shows the meaning
+
+## 18)Password Manager
+This is a simple password manager program implemented in Python using the tkinter library for the GUI. It allows users to generate and store passwords for their Gmail or any accounts.

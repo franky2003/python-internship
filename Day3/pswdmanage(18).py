@@ -8,15 +8,13 @@ def verify_gmail():
     if re.match(gmail_pattern, gmail):
         return True
     else:
-        result_label.config(text="Invalid Gmail ID. Please enter a valid one.")
+        result_label.config(text="Invalid Gmail ID")
         return False
 
 def generate_password():
     if not verify_gmail():
         return
-
     password_length = 16
-
     letters_count = random.randint(1, 8)
     numbers_count = random.randint(1, 8)
     symbols_count = 16 - letters_count - numbers_count
