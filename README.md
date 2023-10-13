@@ -55,3 +55,6 @@ A program that fetches a word from dictionary and shows the meaning
 
 ## 18) Password Manager
 This is a simple password manager program implemented in Python using the tkinter library for the GUI. It allows users to generate and store passwords for their Gmail or any accounts.
+
+## 19) Basic Calculator using Tkinter
+This is a simple Python program which performs basic arithmetic operations with the help of Python GUI.
