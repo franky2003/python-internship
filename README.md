@@ -49,3 +49,6 @@ A simple Python program that generates strong and secure passwords.A simple Pyth
 
 ## 16) Hello World
 A simple Python program that displays Hello World when clicked 
+
+## 17)Word Meaning Finder
+A program that fetches a word from dictionary and shows the meaning
