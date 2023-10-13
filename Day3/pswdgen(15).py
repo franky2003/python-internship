@@ -28,11 +28,11 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 window = tk.Tk()
 window.title("Password Generator")
 window.geometry("500x250")
-label = tk.Label(window, text="How many letters would you like in your password?")
+label = tk.Label(text="How many letters would you like in your password?")
 label.grid(row=0, column=0, padx=10, pady=10)
-label = tk.Label(window, text="How many numbers would you like in your password?")
+label = tk.Label(text="How many numbers would you like in your password?")
 label.grid(row=1, column=0, padx=10, pady=10)
-label = tk.Label(window, text="How many symbols would you like in your password?")
+label = tk.Label(text="How many symbols would you like in your password?")
 label.grid(row=2, column=0, padx=10, pady=10)
 
 entry = tk.Entry(window)
@@ -42,12 +42,10 @@ entry1.grid(row=1, column=1, padx=10, pady=10)
 entry2 = tk.Entry(window)
 entry2.grid(row=2, column=1, padx=10, pady=10)
 
-generate_button = tk.Button(window, text="Generate Password", command=generate_password)
+generate_button = tk.Button(text="Generate Password", command=generate_password)
 generate_button.grid(row=3, column=0, columnspan=2, pady=10)
 
-result_label = tk.Label(window, text="")
+result_label = tk.Label(text="")
 result_label.grid(row=4, column=0, columnspan=2, pady=(0,10))
 
 window.mainloop()
-
-
