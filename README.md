@@ -14,3 +14,4 @@ Projects based on basic Python
 # 11)Url Extractor
 # 12)Number Extractor
 # 13)Conversion of miles to kms
+# 14)Square of a number

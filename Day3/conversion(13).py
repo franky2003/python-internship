@@ -6,7 +6,7 @@ def lol_label():
     label2.config(text=f"Converted value is {sq}kms", font=d_font)
 
 window = tk.Tk()
-window.title("Square Calc")
+window.title("Converter")
 window.geometry("400x200")
 
 c_font = ("algerian", 20)
