@@ -1,49 +1,58 @@
 import tkinter as tk
 from tkinter import ttk
 
-def add():
-    num1 = float(entry1.get())
-    num2 = float(entry2.get())
-    result.set(num1 + num2)
+def click_button(value):
+    current = str(entry.get())
+    entry.delete(0, tk.END)
+    entry.insert(0, current + value)
 
-def subtract():
-    num1 = float(entry1.get())
-    num2 = float(entry2.get())
-    result.set(num1 - num2)
+def clear():
+    entry.delete(0, tk.END)
 
-def multiply():
-    num1 = float(entry1.get())
-    num2 = float(entry2.get())
-    result.set(num1 * num2)
-
-def divide():
-    num1 = float(entry1.get())
-    num2 = float(entry2.get())
-    result.set(num1 / num2)
+def calculate():
+    try:
+        result = eval(entry.get())
+        entry.delete(0, tk.END)
+        entry.insert(0, str(result))
+    except Exception as e:
+        entry.delete(0, tk.END)
+        entry.insert(0, "Error")
 
 window = tk.Tk()
 window.title("Calculator")
-window.geometry("500x250")
 
+frame = ttk.Frame(window, padding=10)
+frame.grid(row=0, column=0)
 
-entry1 = ttk.Entry(window)
-entry2 = ttk.Entry(window)
+entry = ttk.Entry(frame, font=('Arial', 24))
+entry.grid(row=0, column=0, columnspan=4, pady=(0, 10), ipady=5)
 
-result = tk.StringVar()
+buttons = [
+    '7', '8', '9', '/',
+    '4', '5', '6', '*',
+    '1', '2', '3', '-',
+    'C', '0', '=', '+'
+]
 
-result_label = ttk.Label(textvariable=result)
+row_val = 1
+col_val = 0
 
-add_button = ttk.Button(text="+", command=add)
-subtract_button = ttk.Button(text="-", command=subtract)
-multiply_button = ttk.Button(text="*", command=multiply)
-divide_button = ttk.Button(text="/", command=divide)
+for button in buttons:
+    action = lambda x=button: click_button(x)
 
-entry1.grid(row=1, column=0, padx=10, pady=10)
-entry2.grid(row=1, column=2, padx=10, pady=10)
-result_label.grid(row=2, column=0, columnspan=2, pady=10)
-add_button.grid(row=3, column=0, padx=5, pady=5)
-subtract_button.grid(row=3, column=1, padx=5, pady=5)
-multiply_button.grid(row=4, column=0, padx=5, pady=5)
-divide_button.grid(row=4, column=1, padx=5, pady=5)
+    if button == '=':
+        action = calculate
+    elif button == 'C':
+        action = clear
+
+    ttk.Button(frame, text=button, width=5, command=action).grid(row=row_val, column=col_val, padx=5, pady=5)
+    col_val += 1
+    if col_val > 3:
+        col_val = 0
+        row_val += 1
+
+frame.grid_columnconfigure((0, 1, 2, 3), weight=1)
+frame.grid_rowconfigure((1, 2, 3, 4), weight=1)
 
 window.mainloop()
+
