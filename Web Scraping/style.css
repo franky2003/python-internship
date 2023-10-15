@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1{
+    font-family: Trebuchet MS;
+    color: darkblue;
+    text-align:left;
+  }
+  h3{
+    font-family: Trebuchet MS;
+    color: darkblue;
+    text-align: left;
+  }
+  ul{
+    font-family: Trebuchet MS;
+    color: darkblue;
+    text-align: left;
+  }
+  ol{
+    font-family: Trebuchet MS;
+    color: darkblue;
+    text-align: left;
+  }
+  p {
+    font-family: Trebuchet MS;
+    font-size: 20px;
+  }

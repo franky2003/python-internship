@@ -61,3 +61,6 @@ This is a simple Python program which performs basic arithmetic operations with 
 
 ## 20) To-Do List
 This is a simple To-Do List application built using Python's Tkinter library.
+
+## 21) Web Scraping 
+This Python script uses the BeautifulSoup library to scrape data from the Hacker News website (https://news.ycombinator.com/). It extracts headings, scores, and links of the news articles.
