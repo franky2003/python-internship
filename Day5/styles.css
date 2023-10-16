@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(163, 209, 122);
+    font-family: 'Poppins';font-size: 15px;
+}
+.navbar a{
+    margin-right: 10px;
+}
+.div1,.div2,.div3{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    margin: 10px; 
+    display: inline-block; 
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.div1{
+    background-image: url(images/food1.jpg)
+}
+.div2{
+    background-image: url(images/food2.jpg);
+}
+.div3{
+    background-image: url(images/food3.jpg);
+}

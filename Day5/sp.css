@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(30 215 96);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Signika', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+  }  
+td img{
+    width: 50px;
+    height: 50px;
+}  
+

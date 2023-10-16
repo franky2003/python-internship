@@ -64,3 +64,12 @@ This is a simple To-Do List application built using Python's Tkinter library.
 
 ## 21) Web Scraping 
 This Python script uses the BeautifulSoup library to scrape data from the Hacker News website (https://news.ycombinator.com/). It extracts headings, scores, and links of the news articles.
+
+## 22) Web Scraping 2nd part
+
+## 23) Random Image Generator
+Images generated from Lorem Picsum using Html and Css.
+## 24)Food Menu
+Simple menu layout of different foods and drinks using Html and Css.
+## 25) Spotify Charts Page
+Simple page of Spotify Charts indicating the top hits(Using Html and Css).

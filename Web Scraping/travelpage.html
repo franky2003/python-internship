@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <title>Reservation Page</title>
+</head>
+<body>
+    <h1>Travel Reservation Form</h1>
+    <h3>*denotes mandatory</h3>
+    <div>
+        <form class="login" action="">
+            <label for="fullname">*Full Name:</label>
+            <br>
+            <input type="text" id="fullname" name="fullname" required>
+            <br>
+            <label for="email">*Email Address:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+        <br>
+        <div class="choose-package">
+            <label for="cars">*Select Tour Package:</label>
+            <select name="tour packages" id="tour packages" required>
+              <option value="goa">Goa</option>
+              <option value="manali">Manali</option>
+              <option value="delhi">Delhi</option>
+              <option value="munnar">Munnar</option>
+            </select>
+        </div>
+        <br>
+        <form>
+            <label for="arrival_date">*Arrival Date:</label>
+            <br>
+            <input type="date" id="arrival_date" name="arrival_date" required>
+            <br>
+            <br>
+            <label for="no_of_persons">*Number of Persons</label>
+            <br>
+            <input type="number" id="no_of_persons" name="no_of_persons" required>
+            <br>
+        </form>
+        <form action="">
+            <label for="avail">*What would you want to avail ?</label>
+            <br>
+            <label for="boarding">Boarding</label>
+            <input type="checkbox" id="boarding" name="boarding" value="Boarding"><br>
+            <label for="food">Food and Drinks</label>
+            <input type="checkbox" id="food" name="food" value="Food"><br>
+            <label for="sight_seeing">Sight Seeing</label>   
+            <input type="checkbox" id="sight_seeing" name="sight_seeing" value="Sight Seeing"><br>
+            <br>
+            <br>
+        </form>
+        <form>
+            <label for="coupon_code">Discount Coupon Code</label>
+            <br>
+            <input type="text" id="coupon_code" name="coupon_code">
+            <br>
+            <label for="terms">*Terms and Conditions</label>
+            <br>
+            <input type="radio" id="terms" name="terms" value="Agree">
+            <label for="terms">I agree</label><br>
+            <input type="radio" id="conditions" name="terms" value="Disagree">
+            <label for="conditions">I disagree</label><br>
+            <button type="button" onclick="alert('Reservation Successful')">Complete Reservation</button>
+        </form>
+    </div>
+</body>
+</html>

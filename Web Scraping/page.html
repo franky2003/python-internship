@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+        }
+        .login {
+            border: 2px solid black;
+            padding: 20px;
+            font-family:'Trebuchet MS';
+        }
+        .choose-car {
+            position: absolute;
+            left: 20px;
+            top: 65%;
+        }
+        .vehicle-form {
+            position: absolute;
+            left: 20px;
+            top: 15%;
+        }
+    </style>
+</head>
+<body>
+    <form class="vehicle-form" action="">
+        <label for="">What Kind of Vehicles do you own?</label>
+        <br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+    </form>
+    <div class="choose-car">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="toyota">Toyota</option>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+        </select>
+    </div>
+    <div>
+        <form class="login" action="">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
+
+
