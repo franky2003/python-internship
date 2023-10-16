@@ -4,3 +4,8 @@
 table, th, td {
     border:1px solid black;
   }
+  table tr{
+    background-color:#f8f9fa;
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+  }
